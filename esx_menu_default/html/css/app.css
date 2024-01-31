@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.5vw; padding: 1vw;
+    position: absolute; left: 40; top: 80; width: 20vw; height: fit-content;
+}
+
+.menu > .head {
+    display: flex; align-items: center; width: 100%;
+    gap: 0.5vw; margin-bottom: 1vh;
+}
+
+.menu > .head > span {
+    color: white; font-size: 1vw; font-weight: 800;
+    text-transform: uppercase; font-style: italic;
+}
+
+.menu > .head > .line {
+    width: 100%; height: 0.5vh;
+    border-radius: 5vw; flex: 1;
+}
+
+.menu > .menu-items {
+    width: 100%; max-height: 42vh; overflow-y: hidden;
+}
+
+.menu > .menu-items > .menu-item {
+    width: 100%; height: 6vh; border-radius: 0.2vw;
+    color: white; font-size: 0.8vw; font-style: italic; padding: 0 1vw 0 1vw;
+    border: 0.15vw solid transparent; margin-bottom: 1.2vh;
+    display: flex; align-items: center; 
+}
+
+.menu > .menu-items > .menu-item:last-child {
+    margin: 0;
+}
+
+.menu > .menu-items > .menu-item.selected {
+    border: 0.15vw solid transparent;
+}
+
+.menu.align-left {
+    left: 0;
+    top: 50%;
+}
+
+.menu.align-top-left {
+    left: 3rem;
+    top: 0;
+}
+
+.menu.align-top {
+    left: 50%;
+    top: 0;
+}
+
+.menu.align-top-right {
+    right: 3rem;
+    top: 0;
+}
+
+.menu.align-right {
+    right: 0;
+    top: 50%;
+}
+
+.menu.align-bottom-right {
+    right: 3rem;
+    bottom: 0;
+}
+
+.menu.align-bottom {
+    left: 50%;
+    bottom: 0;
+    transform: translate(0, -50%);
+}
+
+.menu.align-bottom-left {
+    left: 3rem;
+    bottom: 0;
+}
+
+.menu.align-center {
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, 50%);
+}

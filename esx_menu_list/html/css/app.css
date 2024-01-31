@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.5vw; padding: 1vw;
+    position: absolute; height: fit-content;
+    left: 50%; top: 40%; transform: translate(-50%, -50%);
+}
+
+.menu > table {
+    border-collapse: separate;
+    border-spacing: 0 1vh; min-width: 400px;
+}
+
+.menu > table > thead {
+    text-align: center; text-transform: uppercase;
+    height: 5vh; line-height: 2vh; font-style: italic;
+    color: white; font-size: 0.8vw;
+}
+
+.menu td {
+    text-align: center; padding: 1vw;
+}
+
+.menu tbody tr:nth-child(even) {
+    color: white; text-transform: uppercase; font-size: 0.8vw;
+}
+
+.menu tbody tr:nth-child(odd) {
+    color: white; text-transform: uppercase; font-style: italic; font-size: 0.8vw;
+}
+
+button {
+    border: 0.15vw solid transparent;
+    padding: 1vh 1vw 1vh 1vw; cursor: pointer;
+    text-transform: uppercase; border-radius: 0.2vw;
+    color: white; font-size: 0.8vw; font-style: italic; font-weight: 800; gap: 0.5vw;
+}
+
+button:nth-child(odd) {
+    border-color: transparent;
+}
